@@ -2,10 +2,11 @@ class Bubble {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.alpha = random(20, 255);
-    this.r = random(5, 15);
-    this.velx = random(-5, 5);
-    this.vely = random(-5, 5);
+    this.r = random(20, 50);
+    this.velx = random(-2, 2);
+    this.vely = random(-2, 2);
+    this.brightness = "#fff";
+    this.status = true;
   }
   move() {
     this.x = this.x + this.velx;
